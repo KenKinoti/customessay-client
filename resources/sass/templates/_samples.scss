@@ -1,0 +1,43 @@
+#samples {
+    .btn {
+        padding: .375rem .75rem;;
+    }
+
+    .sample {
+        padding: 15px;
+        border: 1px solid $light;
+        margin-bottom: 25px;
+        background-color: #fff;
+
+        .badge {
+            font-size: 0.8rem;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            &.badge-info,
+            &.badge-primary,
+            &.badge-success,
+            &.badge-default {
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .info {
+                border-left: 1px solid $primary;
+            }
+        }
+
+        h4 {
+            margin-bottom: 0;
+        }
+
+        strong {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            color: $dark;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.card {
+    .card-header {
+        padding: 8px 15px;
+
+        a {
+            &:after {
+                font-family: "themify-icons", serif;
+                font-weight: 900;
+                content: "\E61A";
+                font-size: 16px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+
+            &[aria-expanded="true"]:after {
+                content: "\E622";
+            }
+        }
+    }
+}
+

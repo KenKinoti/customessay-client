@@ -1,0 +1,26 @@
+<?php 
+return [
+  'upload' => '用户个人资料已更新',
+  'general' => '一般',
+  'user_id' => '用户身份',
+  'email' => '电子邮件',
+  'view_profile' => '查看资料',
+  'change_password' => '更改密码',
+  'current_password' => '当前密码',
+  'new_password' => '新密码',
+  'confirm_password' => '确认密码',
+  'edit_profile' => '编辑个人资料',
+  'password_updated' => '密码更新成功',
+  'phone_number' => '电话号码',
+  'country' => '国家',
+  'timezone' => '时区',
+  'close' => '关',
+  'submit' => '提交',
+  'suspended_message' => '此帐户已被暂停',
+  'timezone_message' => '嘿，您的时区似乎丢失了。请通过编辑您的个人资料进行更新',
+  'status' => [
+    'active' => '活性',
+    'suspended' => '已暂停',
+    'deactivated' => '已停用',
+  ],
+];

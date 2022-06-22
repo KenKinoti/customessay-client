@@ -1,0 +1,171 @@
+/*******************
+General Topbar
+*******************/
+
+.topbar {
+    position: relative;
+    z-index: 50;
+    background: transparent;
+
+    .navbar-collapse {
+        padding: 0 10px 0 0;
+        border-bottom: 1px solid $gray-400;
+    }
+
+    .top-navbar {
+        padding: 0;
+        min-height: 80px;
+
+        .navbar-header {
+            line-height: 80px;
+            background: transparent;
+            box-shadow: 0 -7px 9px 0 rgba(169, 184, 200, .15);
+            -webkit-box-shadow: 0 -7px 9px 0 rgba(169, 184, 200, .15);
+            -moz-box-shadow: 0 -7px 9px 0 rgba(169, 184, 200, .15);
+
+            .navbar-brand {
+                margin-right: 0;
+                padding-bottom: 4px;
+                border-bottom: 1px solid #eee;
+
+                .logo {
+                    line-height: normal;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    padding: 15px;
+                }
+            }
+        }
+
+        .navbar-nav > .nav-item > .nav-link {
+            padding: 0 15px;
+            line-height: 80px;
+            color: $dark;
+            position: relative;
+
+
+            &.btn-link {
+                line-height: 48px;
+                color: #fff !important;
+
+
+                i:before {
+                    background: darken($warning, 15%);
+                    height: 30px;
+                    width: 30px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    color: $white;
+                    margin-right: 8px;
+                }
+            }
+
+            .notify-no {
+                position: absolute;
+                top: 34px;
+                right: 4px;
+                line-height: 11px;
+                padding: 4px 6px;
+            }
+        }
+
+        .navbar-nav > .nav-item {
+            transition: 0.2s ease-in;
+        }
+    }
+
+    .mailbox {
+        .message-center {
+            .message-item {
+                &:hover {
+                    background: $gray-100;
+                }
+
+                .message-title {
+                    color: $gray-900;
+                }
+            }
+        }
+    }
+
+    .user-dd {
+        min-width: 280px;
+    }
+
+    .nav-toggler,
+    .topbartoggler {
+        color: $light;
+        padding: 0 15px;
+    }
+}
+
+/*******************
+Designed dropdown
+******************/
+.topbar {
+    .dropdown-menu {
+        padding-top: 0;
+        border: 0;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+    }
+
+    /*******************
+    Topbar Responsive
+    ******************/
+
+    @include media-breakpoint-down(sm) {
+        .topbar .top-navbar {
+
+            .navbar-collapse.show,
+            .navbar-collapse.collapsing {
+                display: block;
+                width: 100%;
+                border-top: 1px solid $light;
+            }
+
+            .navbar-nav {
+                flex-direction: row;
+
+                .dropdown {
+                    position: static;
+                }
+            }
+
+            .navbar-nav > .nav-item > .nav-link {
+                padding: 0 10px;
+            }
+
+            .navbar-header {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                width: 100%;
+
+                .with-arrow {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (orientation: landscape) {
+        .mailbox {
+            .message-center {
+                height: 145px !important;
+            }
+        }
+    }
+}

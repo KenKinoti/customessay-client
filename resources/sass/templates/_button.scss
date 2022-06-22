@@ -1,0 +1,54 @@
+
+.btn {
+    font-size: .6875rem;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: .5px
+}
+
+.btn-circle {
+    display: inline-flex;
+    width: 4.20313rem !important;
+    height: 4.20313rem !important;
+    padding: 0 !important;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center
+}
+
+
+.btn-outline-dark {
+    border: 1px solid#222;
+}
+.btn-white{
+    background: #fff;
+    color: #212529;
+}
+.btn-trans-white {
+    border: 1px solid#fff;
+    color: #fff;
+}
+
+.btn-outline-dark:hover {
+    background: #222 !important;
+    color: #fff !important;
+}
+
+.btn.btn-link {
+    color: #212529;
+}
+
+.btn:focus {
+    box-shadow: none !important
+}
+
+.btn-circled {
+    border-radius: 75px;
+}
+
+.shadow-sm-2{
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+}

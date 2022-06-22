@@ -1,0 +1,60 @@
+$primary: #416339;
+$secondary: #ad974f;
+$light: #ece8d3;
+
+$black:           #373737;
+$black-light:     #6c757d;
+$black-lighter:   #888;
+$border-color:    #eee;
+$white:           #fff;
+$red:             #ff3837;
+$yellow:          #ffd300;
+$dark-blue:       #48149c;
+$light-brown:       #fffbd0;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+        (
+            "primary":    $primary,
+            "secondary":  $secondary,
+            "light":      $light,
+            "light-brown": $light-brown
+        ),
+        $theme-colors
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+ (
+        25: 25%,
+        30: 30%,
+        35: 35%,
+        40: 40%,
+        45: 45%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+ ),
+    $sizes
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+) !default;
+
+$font-size-base:              1rem !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$primary-font: 'Poppins', sans-serif;
+

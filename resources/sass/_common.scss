@@ -1,0 +1,96 @@
+/*--------------------
+Common Styles
+-----------------*/
+
+.section-heading {
+    margin-bottom: 80px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    border: 1px solid #dee2e6;
+    background-color: #fff
+}
+
+
+.section {
+    position: relative;
+    padding: 8.125rem 0;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 7.5rem 0
+    }
+}
+
+.section-top {
+    padding-top: 8.125rem;
+}
+
+.section-bottom {
+    padding-bottom: 8.125rem;
+}
+
+@media (min-width: 768px) {
+    .section-top {
+        padding-top: 10.3125rem
+    }
+}
+
+.bg-grey {
+    background: #F4F7FC;
+}
+
+
+/*------------------------
+ BACKGROUND
+----------------------------*/
+
+.bg-cover {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover
+}
+
+.bg-cover,
+.bg-overlay,
+.bg-overlay:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.bg-overlay:before {
+    content: "";
+    background: rgba(245, 245, 245, 0.8);
+}
+
+.box-shadow {
+    box-shadow: 0 25px 100px -5px rgba(0, 0, 0, .15)
+}
+
+.bg-primary {
+    background: $primary !important;
+}
+
+a {
+    color: $primary;
+}
+
+a:hover, a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.custom-file-label::after {
+    color: $white;
+    background-color: $primary;
+}

@@ -1,0 +1,19 @@
+.btn-primary.bootstrap-touchspin-up,
+.btn-primary.bootstrap-touchspin-down {
+  border-color: $gray-600;
+  background-color: $gray-600;
+    padding: 0.375rem 0.75rem;
+}
+
+button.btn.bootstrap-touchspin-up,
+button.btn.bootstrap-touchspin-down {
+  &:hover {
+    background-color: darken($primary, 15%);
+    border-color: darken($primary, 15%);
+    color: $white;
+  }
+}
+
+.input-group.bootstrap-touchspin {
+  width: 120px;
+}

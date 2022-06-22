@@ -1,0 +1,55 @@
+@if($order->status == $status::UNPAID)
+    <span class="badge badge-danger">@lang('order.stage.unpaid')</span>
+@elseif($order->status == $status::AVAILABLE)
+    <span class="badge badge-warning">@lang('order.stage.available')</span>
+@elseif($order->status == $status::PENDING_CONFIRMATION)
+    <span class="badge badge-info">@lang('order.stage.assignment')</span>
+@elseif($order->status == $status::ASSIGNED)
+    <span class="badge badge-warning">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::REASSIGNMENT_REQUESTED)
+    <span class="badge badge-warning">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::SUBMITTED)
+    <span class="badge badge-warning">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::FORWARDED)
+    <span class="badge badge-success">@lang('order.stage.submitted')</span>
+@elseif($order->status == $status::ACCEPTED)
+    <span class="badge badge-success">@lang('order.stage.accepted')</span>
+@elseif($order->status == $status::PENDING_CLIENT_REVIEW_CONFIRMATION)
+    <span class="badge badge-success">@lang('order.stage.review')</span>
+@elseif($order->status == $status::REVIEW_BY_CLIENT)
+    <span class="badge badge-warning">@lang('order.stage.review')</span>
+@elseif($order->status == $status::PENDING_ADMIN_REVIEW_CONFIRMATION)
+    <span class="badge badge-warning">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::REVIEW_BY_ADMIN)
+    <span class="badge badge-warning">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::CLIENT_REVIEW_SUBMISSION)
+    <span class="badge badge-warning">@lang('order.stage.review')</span>
+@elseif($order->status == $status::ADMIN_REVIEW_SUBMISSION)
+    <span class="badge badge-danger">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::DISPUTED)
+    <span class="badge badge-danger">@lang('order.stage.disputed')</span>
+@elseif($order->status == $status::PENDING_REFUND)
+    <span class="badge badge-danger">@lang('order.stage.disputed')</span>
+@elseif($order->status == $status::REFUNDED)
+    <span class="badge badge-danger">@lang('order.stage.refunded')</span>
+@elseif($order->status == $status::REFUND_REVIEW)
+    <span class="badge badge-danger">@lang('order.stage.disputed')</span>
+@elseif($order->status == $status::CANCELLED)
+    <span class="badge badge-danger">@lang('order.stage.cancelled')</span>
+@elseif($order->status == $status::DEADLINE_EXTENSION_REQUESTED)
+    <span class="badge badge-danger">@lang('order.stage.assigned')</span>
+@elseif($order->status == $status::REVIEW_REASSIGNMENT_REQUESTED)
+    <span class="badge badge-danger">@lang('order.stage.review')</span>
+@elseif($order->status == $status::ADMIN_REVIEW_REASSIGNMENT_REQUESTED)
+    <span class="badge badge-danger">@lang('order.stage.review')</span>
+@elseif($order->status == $status::REVISION_DEADLINE_EXTENSION_REQUESTED)
+    <span class="badge badge-danger">@lang('order.stage.review')</span>
+@elseif($order->status == $status::ADMIN_REVISION_DEADLINE_EXTENSION_REQUESTED)
+    <span class="badge badge-danger">@lang('order.stage.review')</span>
+@elseif($order->status == $status::PARTIAL_REFUND)
+    <span class="badge badge-danger">@lang('order.stage.partial_refund')</span>
+@elseif($order->status == $status::AUTO_ACCEPTED)
+    <span class="badge badge-success">@lang('order.stage.accepted')</span>
+@elseif($order->status == $status::MANUALLY_ACCEPTED)
+    <span class="badge badge-danger">@lang('order.stage.accepted')</span>
+@endif

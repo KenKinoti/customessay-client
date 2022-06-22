@@ -1,0 +1,30 @@
+.select2-container {
+    width: 100%;
+
+    &.select2-container--default {
+
+        .select2-selection--single {
+            background-color: #fff;
+            border: 1px solid $gray-200;
+            border-radius: $border-radius;
+            height: calc(1.5em + 0.75rem + 2px);
+
+            &:focus {
+                outline: none;
+                border-color: $primary;
+                box-shadow: none;
+            }
+        }
+
+        .select2-selection__arrow {
+            top: 7px;
+        }
+
+        .select2-selection__rendered {
+            line-height: calc(1.5em + 0.75rem + 2px);
+        }
+    }
+}
+select.form-control[size], select.form-control[multiple] {
+    height: calc(1.5em + 0.75rem + 2px);
+}

@@ -1,0 +1,163 @@
+.order {
+  .nav-tabs {
+    background: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+
+    > li.nav-item > a.nav-link {
+      border: 0;
+      color: #6b6b6b;
+      border-radius: 0;
+
+      &:focus,
+      &:hover {
+        border: 0;
+      }
+    }
+
+    > li.nav-item > a.nav-link.active {
+      color: $primary;
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+    @include media-breakpoint-up(sm) {
+        .sticky {
+            position: sticky;
+            top: 150px;
+        }
+    }
+
+  .item {
+    display: none;
+    padding: 5px 0;
+
+    .description {
+      color: $gray-800;
+    }
+
+    .amount {
+      font-weight: 600;
+    }
+  }
+
+  .price {
+    font-size: 1.25rem;
+  }
+}
+
+.radio-btn-group {
+  display: flex;
+  justify-content: stretch;
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+  }
+
+  .radio-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $gray-200;
+    color: $gray-800;
+    border-right: 1px solid $gray-400;
+
+    &:first-child {
+      @include border-left-radius(5px);
+    }
+
+    &:last-child {
+      @include border-right-radius(5px);
+    }
+
+    &:hover,
+    &.active {
+      background-color: darken($primary, 15%);
+      color: $white;
+    }
+
+    &.active {
+      cursor: default;
+    }
+  }
+}
+
+
+.choice {
+    cursor: pointer;
+    position: relative;
+    border: 2px solid $gray-400;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+
+
+
+    .icon {
+        padding: 1.2rem 0.8rem;
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+    .details {
+        padding: 0.8rem 1rem;
+    }
+
+    &:hover {
+        border-color: $gray-600;
+    }
+
+    &.active {
+        border: 2px solid $success;
+        color: $dark;
+
+        &:after{
+            font-family: "themify-icons";
+            content: "\E64C";
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            background: $success;
+            color: $white;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+            speak: none;
+            text-decoration: none;
+            height: 24px;
+            width: 24px;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 50%;
+        }
+
+        .h5 {
+            color: $dark;
+        }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        position: absolute;
+        left: -10000px;
+        z-index: -1;
+    }
+}
+
+.currency {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 600;
+}

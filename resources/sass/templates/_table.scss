@@ -1,0 +1,90 @@
+.prices {
+    .nav-pills .nav-link {
+        border-radius: 0;
+        padding: {
+            left: 25px;
+            right: 25px;
+        };
+    }
+
+    .th-dealine {
+        background-color: #f79910;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .th-head {
+        background-color: #cc6600;
+        font-size: 18px;
+        color: #fff;
+
+    }
+
+    .th-table {
+        background-color: white;
+        font-size: 18px;
+    }
+
+    .th-table:hover:nth-child(2) {
+        background-color: #CC6600;
+        color: #fff;
+    }
+
+    .th-table:hover:nth-child(3) {
+        background-color: #fffbd0;
+        color: #000;
+
+    }
+
+    .th-table:hover:nth-child(4) {
+        background-color: #CC6600;
+        color: #fff;
+    }
+
+    .th-table:hover:nth-child(5) {
+        background-color: #fffbd0;
+        color: #000;
+
+    }
+
+    .th-table:hover:nth-child(6) {
+        background-color: #CC6600;
+        color: #fff;
+    }
+
+    .th-table:hover:nth-child(7) {
+        background-color: #fffbd0;
+        color: #000;
+    }
+
+    .th-table:hover:nth-child(8) {
+        background-color: #CC6600;
+        color: #fff;
+    }
+
+    .th-table:hover:nth-child(9) {
+        background-color: #fffbd0;
+        color: #000;
+    }
+
+    .th-table:hover:nth-child(10) {
+        background-color: #CC6600;
+        color: #fff;
+    }
+
+    .th-table:hover:nth-child(11) {
+        background-color: #fffbd0;
+        color: #000;
+
+    }
+
+    .th-table:hover:nth-child(12) {
+        background-color: #CC6600;
+        color: #fff;
+    }
+
+    .th-table:nth-child(2n+1) {
+        background-color: #0e2037;
+        color: #fff;
+    }
+}

@@ -1,0 +1,42 @@
+@import 'variables';
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "~select2/src/scss/core";
+@import "~sweetalert2/src/sweetalert2";
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+@import '~intl-tel-input/build/css/intlTelInput.css';
+
+@import '~jquery-bar-rating/dist/themes/css-stars.css';
+
+@import 'mixins';
+@import 'media-query';
+@import 'typography';
+@import 'common';
+@import 'templates/header';
+@import 'templates/samples';
+@import 'templates/accordion';
+@import 'templates/multifile';
+@import 'templates/touchspin';
+@import 'templates/layout';
+@import 'templates/sidebar';
+@import 'templates/navbar';
+@import 'templates/table';
+@import 'templates/navigation';
+@import 'templates/slider';
+@import 'templates/button';
+@import 'templates/about';
+@import 'templates/process';
+@import 'templates/pricing';
+@import 'templates/blog';
+@import 'templates/testimonial';
+@import 'templates/contact';
+@import 'templates/footer';
+@import 'templates/progress';
+@import 'responsive';
+@import "components/order";
+@import "components/select2";
+
+
+
+

@@ -1,0 +1,71 @@
+/** --------------------------------------------------
+Author       : Dreambuzz
+Template Name: Rapoo - it solution landing template
+Author URI : https://themeforest.net/user/dreambuzz/portfolio
+Description: Rapoo,it, onepage,clean,bootstrap4,
+Description: Rapoo,it, onepage,clean,bootstrap4, responsive,modern,agency,landing template.
+Version      : 1.0
+* -------------------------------------------------  */
+
+/*-----------------------------
+ CSS INDEXING
+* --------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.TYPOGRAPHY CSS STYLE
+* 03.BUTTONS STYLE
+* 04.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+    -BACKGROUND
+* 05.FEATURES CSS STYLE
+* 06.SERVICE CSS STYLE
+* 07.ABOUT CSS STYLE
+* 08.PRICING CSS STYLE
+* 09.TESTIMONIAL STYLE
+* 10.LATEST BLOG CSS STYLE
+* 11.CONTACT CSS STYLE
+* 12.FOOTER CSS STYLE
+* ----------------------------------------
+*/
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body {
+    font-family: $primary-font;
+    line-height: 1.75;
+    margin: 0;
+    text-align: left;
+    background-color: #fff;
+    font-weight: 300;
+    color: #373737;
+}
+
+/*--------------------
+ TYPOGRAPHY
+-----------------*/
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: $primary-font;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: .5rem;
+    color: $black;
+}
